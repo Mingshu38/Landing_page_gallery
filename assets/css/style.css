@@ -186,7 +186,7 @@ body{
 }
 
 .content{
-    padding-block: 0 5rem;
+    padding-block: 0rem 5rem;
     padding-inline: 2rem;
     text-align: center;
 }
@@ -217,6 +217,47 @@ body{
     line-height: 1.75rem;
     color: var(--text-dark);
 }
+
+.location{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--primary-color);
+    border: 10px solid var(--white);
+    border-bottom: none;
+}
+
+.location span{
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.socials{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials a{
+    font-size: 1.25rem;
+    color: var(--text-dark);
+
+}
+
 
 @media (width > 768px){
     nav{
@@ -305,8 +346,9 @@ body{
     }
     .content{
         padding-block: 5rem;
-        text-align: left;
+        text-align:center;
         max-width: 400px;
         margin-inline-start: unset;
     }
 }
+
